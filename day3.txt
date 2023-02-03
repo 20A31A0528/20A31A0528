@@ -1,0 +1,193 @@
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+num=[12,-2,-33,84,5,6,87,8,99,10]
+print(sort(num))
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    print(sort(num))
+NameError: name 'sort' is not defined. Did you mean: 'sorted'?
+print(sorted(num))
+[-33, -2, 5, 6, 8, 10, 12, 84, 87, 99]
+print(any(num))
+True
+num=[12,-2,-33,84]
+num.append(0)
+print(num)
+[12, -2, -33, 84, 0]
+print(num.count(5))
+0
+num[6,3,7,0,1,2,4,9]
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    num[6,3,7,0,1,2,4,9]
+TypeError: list indices must be integers or slices, not tuple
+KeyboardInterrupt
+num=[6,3,7,0,1,2,4,9]
+print(num.index(7))
+2
+print(num.insert(3,100))
+None
+print(num.insert(5,100))
+None
+print(num)
+[6, 3, 7, 100, 0, 100, 1, 2, 4, 9]
+print(num.remove(0))
+None
+print(num)
+[6, 3, 7, 100, 100, 1, 2, 4, 9]
+>>> num.revserse()
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    num.revserse()
+AttributeError: 'list' object has no attribute 'revserse'. Did you mean: 'reverse'?
+>>> num.reverse()
+>>> print(num)
+[9, 4, 2, 1, 100, 100, 7, 3, 6]
+>>> print(num.reverse())
+None
+>>> print(num)
+[6, 3, 7, 100, 100, 1, 2, 4, 9]
+>>> n=10
+>>> for i in range(0,10)
+SyntaxError: incomplete input
+>>> N=0
+>>> n=0
+>>> for i in range(0,10):
+...     if(i%n==0)
+...     
+SyntaxError: incomplete input
+>>> cubes =[]
+>>> for i in range(11):
+...     cubes=.append(i*3)
+...     
+SyntaxError: invalid syntax
+>>> cubes =[]
+... for i in range(11):
+...     cubes.append(i*3)
+...     
+SyntaxError: multiple statements found while compiling a single statement
+>>> cubes =[]
+for i in range(11):
+    cubes.append(i*3)
+
+    
+print(cubes)
+[0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+cubes =[]
+for i in range(11):
+    cubes.append(i**3)
+    
+SyntaxError: multiple statements found while compiling a single statement
+cubes =[]
+for i in range(11):
+    cubes.append(i**3)
+    print(cubes)
+
+    
+[0]
+[0, 1]
+[0, 1, 8]
+[0, 1, 8, 27]
+[0, 1, 8, 27, 64]
+[0, 1, 8, 27, 64, 125]
+[0, 1, 8, 27, 64, 125, 216]
+[0, 1, 8, 27, 64, 125, 216, 343]
+[0, 1, 8, 27, 64, 125, 216, 343, 512]
+[0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
+[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+print(cubes)
+[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+n=int(input("Enter the number"))
+Enter the number
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    n=int(input("Enter the number"))
+ValueError: invalid literal for int() with base 10: ''
+num==[int(d) for d in str (input("Enter number:"))
+even,odd = 0,0
+      
+SyntaxError: '[' was never closed
+num==[int(d) for d in str (input("Enter number:"))
+even,odd=0,0
+      
+SyntaxError: '[' was never closed
+num==[int(d) for d in str (input("Enter number:"))
+even,odd=0,0
+      
+SyntaxError: '[' was never closed
+num==[int(d) for d in str (input("Enter number:"))]
+      
+Enter number:7
+False
+even,odd=0,0
+      
+for i in rangeb(0,len(num)):
+      if i%2==0
+      
+SyntaxError: incomplete input
+num==[int(d) for d in str (input("Enter number:"))]
+      
+Enter number:8
+False
+even,odd=0,0
+      
+for i in rangeb(0,len(num)):
+      if i%2==0:
+      even=even+num[i]
+      
+SyntaxError: expected an indented block after 'if' statement on line 2
+for i in rangeb(0,len(num)):
+      if i%2==0:
+       even=even+num[i]
+      else:
+          odd=odd+even[i]
+    print(abs(odd-even))
+    
+SyntaxError: unindent does not match any outer indentation level
+for i in rangeb(0,len(num)):
+      if i%2==0:
+       even=even+num[i]
+      else:
+          odd=odd+even[i]
+print(abs(odd-even))
+SyntaxError: invalid syntax
+
+for i in range(0,11):
+    print(n*n*n,end="")
+
+    
+00000000000
+for i in range(0,11):
+    print(n*n*n,end=" ")
+
+    
+0 0 0 0 0 0 0 0 0 0 0 
+
+for i in range(0,11):
+    print(n*n*n,end="")
+
+    
+00000000000
+for i in range(0,11):
+    print(i*i*i,end="")
+
+    
+01827641252163435127291000
+for i in range(0,11):
+    print(i*i*i,end=" ")
+
+    
+0 1 8 27 64 125 216 343 512 729 1000 
+term=int(input("Enter the term"))
+Enter the term9
+if term%2==0
+SyntaxError: incomplete input
+if term%2==0:
+    term=term//2
+    print(3**(term-1))
+else:
+    term=term//2+1
+    print(2**(term-1))
+
+    
+16
